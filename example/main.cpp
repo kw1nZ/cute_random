@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "cute_random.h"
+#include "cute_random/cute_random.h"
 
 
 int main() {

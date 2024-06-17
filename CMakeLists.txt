@@ -10,3 +10,9 @@ target_include_directories(${PROJECT_NAME} INTERFACE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
 )
+
+option(${PROJECT_NAME}_BUILD_EXAMPLES "Build examples" ON)
+
+if(${PROJECT_NAME}_BUILD_EXAMPLES)
+    add_subdirectory(example)
+endif()
